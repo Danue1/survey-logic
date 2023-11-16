@@ -1,0 +1,39 @@
+---
+source: syntax-lower/src/syntax/comparison/binary_comparison.rs
+expression: ast
+---
+Ok(
+    Program {
+        statements: [
+            Statement {
+                condition: Condition {
+                    kind: Binary(
+                        ComparisonCondition {
+                            comparison: Comparison {
+                                kind: Binary(
+                                    BinaryComparison {
+                                        parameter: QuestionParameter {
+                                            id: NumericLiteral {
+                                                value: 123,
+                                            },
+                                        },
+                                        operator: BinaryComparisonOperator {
+                                            kind: Equal,
+                                        },
+                                        value: SingularLiteral {
+                                            kind: String(
+                                                StringLiteral {
+                                                    value: "\"foo\"",
+                                                },
+                                            ),
+                                        },
+                                    },
+                                ),
+                            },
+                        },
+                    ),
+                },
+            },
+        ],
+    },
+)

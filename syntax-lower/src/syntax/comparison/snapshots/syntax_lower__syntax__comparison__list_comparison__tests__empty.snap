@@ -1,0 +1,32 @@
+---
+source: syntax-lower/src/syntax/comparison/list_comparison.rs
+expression: ast
+---
+Ok(
+    Program {
+        statements: [
+            Statement {
+                condition: Condition {
+                    kind: Binary(
+                        ComparisonCondition {
+                            comparison: Comparison {
+                                kind: List(
+                                    ListComparison {
+                                        parameter: QuestionParameter {
+                                            id: NumericLiteral {
+                                                value: 123,
+                                            },
+                                        },
+                                        list: ListLiteral {
+                                            values: [],
+                                        },
+                                    },
+                                ),
+                            },
+                        },
+                    ),
+                },
+            },
+        ],
+    },
+)

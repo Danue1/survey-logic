@@ -1,0 +1,18 @@
+---
+source: parse/src/ast/condition.rs
+expression: node
+---
+COMPARISON_CONDITION_NODE@0..9
+  BINARY_COMPARISON_NODE@0..9
+    QUESTION_PARAMETER_NODE@0..4
+      IDENTIFIER@0..1 "Q"
+      NUMERIC_LITERAL_NODE@1..4
+        NUMERIC@1..4 "123"
+    WHITESPACE@4..5 " "
+    LESS_THAN_OR_EQUAL_OPERATOR_NODE@5..7
+      LEFT_CHEVRON@5..6 "<"
+      EQUAL@6..7 "="
+    WHITESPACE@7..8 " "
+    NUMERIC_LITERAL_NODE@8..9
+      NUMERIC@8..9 "1"
+

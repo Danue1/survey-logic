@@ -1,0 +1,7 @@
+---
+source: parse/src/ast/literal.rs
+expression: node
+---
+STRING_LITERAL_NODE@0..5
+  STRING@0..5 "\"abc\""
+

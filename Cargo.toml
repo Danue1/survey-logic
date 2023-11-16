@@ -1,0 +1,13 @@
+[workspace]
+resolver = "2"
+members = [
+  "ast",
+  "ast-semantic",
+  "compile",
+  "entity",
+  "lex",
+  "parse",
+  "syntax-kind",
+  "syntax-lower",
+  "syntax",
+]

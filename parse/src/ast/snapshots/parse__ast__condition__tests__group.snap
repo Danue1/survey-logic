@@ -1,0 +1,20 @@
+---
+source: parse/src/ast/condition.rs
+expression: node
+---
+GROUP_CONDITION_NODE@0..10
+  LEFT_PAREN@0..1 "("
+  COMPARISON_CONDITION_NODE@1..9
+    BINARY_COMPARISON_NODE@1..9
+      QUESTION_PARAMETER_NODE@1..5
+        IDENTIFIER@1..2 "Q"
+        NUMERIC_LITERAL_NODE@2..5
+          NUMERIC@2..5 "123"
+      WHITESPACE@5..6 " "
+      EQUAL_OPERATOR_NODE@6..7
+        EQUAL@6..7 "="
+      WHITESPACE@7..8 " "
+      NUMERIC_LITERAL_NODE@8..9
+        NUMERIC@8..9 "1"
+  RIGHT_PAREN@9..10 ")"
+

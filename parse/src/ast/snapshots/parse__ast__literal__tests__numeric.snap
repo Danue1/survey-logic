@@ -1,0 +1,7 @@
+---
+source: parse/src/ast/literal.rs
+expression: node
+---
+NUMERIC_LITERAL_NODE@0..3
+  NUMERIC@0..3 "123"
+

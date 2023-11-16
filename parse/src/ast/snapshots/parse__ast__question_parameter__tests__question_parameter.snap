@@ -1,0 +1,9 @@
+---
+source: parse/src/ast/question_parameter.rs
+expression: node
+---
+QUESTION_PARAMETER_NODE@0..4
+  IDENTIFIER@0..1 "Q"
+  NUMERIC_LITERAL_NODE@1..4
+    NUMERIC@1..4 "123"
+

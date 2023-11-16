@@ -1,0 +1,7 @@
+---
+source: parse/src/ast/literal.rs
+expression: node
+---
+DATE_LITERAL_NODE@0..12
+  STRING@0..12 "\"2020-01-01\""
+

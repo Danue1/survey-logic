@@ -1,0 +1,37 @@
+---
+source: parse/src/ast/condition.rs
+expression: node
+---
+GROUP_CONDITION_NODE@0..23
+  LEFT_PAREN@0..1 "("
+  LOGICAL_CONDITION_NODE@1..22
+    COMPARISON_CONDITION_NODE@1..9
+      BINARY_COMPARISON_NODE@1..9
+        QUESTION_PARAMETER_NODE@1..5
+          IDENTIFIER@1..2 "Q"
+          NUMERIC_LITERAL_NODE@2..5
+            NUMERIC@2..5 "123"
+        WHITESPACE@5..6 " "
+        EQUAL_OPERATOR_NODE@6..7
+          EQUAL@6..7 "="
+        WHITESPACE@7..8 " "
+        NUMERIC_LITERAL_NODE@8..9
+          NUMERIC@8..9 "1"
+    WHITESPACE@9..10 " "
+    AND_OPERATOR_NODE@10..13
+      IDENTIFIER@10..13 "and"
+    WHITESPACE@13..14 " "
+    COMPARISON_CONDITION_NODE@14..22
+      BINARY_COMPARISON_NODE@14..22
+        QUESTION_PARAMETER_NODE@14..18
+          IDENTIFIER@14..15 "Q"
+          NUMERIC_LITERAL_NODE@15..18
+            NUMERIC@15..18 "456"
+        WHITESPACE@18..19 " "
+        EQUAL_OPERATOR_NODE@19..20
+          EQUAL@19..20 "="
+        WHITESPACE@20..21 " "
+        NUMERIC_LITERAL_NODE@21..22
+          NUMERIC@21..22 "2"
+  RIGHT_PAREN@22..23 ")"
+

@@ -1,0 +1,15 @@
+[package]
+name = "syntax-lower"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ast = { path = "../ast" }
+rowan = "0.15.13"
+syntax = { path = "../syntax" }
+syntax-kind = { path = "../syntax-kind" }
+
+[dev-dependencies]
+insta = "1.34.0"
+lex = { path = "../lex" }
+parse = { path = "../parse" }

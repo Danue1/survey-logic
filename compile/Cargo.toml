@@ -1,0 +1,13 @@
+[package]
+name = "compile"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ast = { path = "../ast" }
+ast-semantic = { path = "../ast-semantic" }
+entity = { path = "../entity" }
+lex = { path = "../lex" }
+parse = { path = "../parse" }
+syntax = { path = "../syntax" }
+syntax-lower = { path = "../syntax-lower" }

@@ -1,0 +1,14 @@
+---
+source: parse/src/ast/literal.rs
+expression: node
+---
+LIST_LITERAL_NODE@0..12
+  LEFT_BRACKET@0..1 "["
+  NUMERIC_LITERAL_NODE@1..4
+    NUMERIC@1..4 "123"
+  COMMA@4..5 ","
+  WHITESPACE@5..6 " "
+  STRING_LITERAL_NODE@6..11
+    STRING@6..11 "\"abc\""
+  RIGHT_BRACKET@11..12 "]"
+
